@@ -12,10 +12,19 @@ nav.forEach(function(t,i,){
         for(let j of sub){j.style.display='none'}
     })
 })
+const search_btn = document.querySelector ('#search_mouse')
+const search = document.querySelector ('#search_frm > fieldset > input')
 const login = document.querySelector('.icon .login_box')
 const icon = document.querySelectorAll('.btm_right .icon')
 const icon_img = document.querySelectorAll('.icon > a > img')
-console.log(login, icon, icon_img)
+console.log(login, icon, icon_img, search_btn, search)
+search.style.display='none'
+search_btn.addEventListener('mouseover',function(){
+    search.style.display='block'
+})
+search_btn.addEventListener('mouseout',function(){
+    search.style.display='none'
+})
 login.style.display='none'
 icon[0].addEventListener('mouseover',function(){
     login.style.display='block'

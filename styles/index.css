@@ -1,11 +1,13 @@
 /* 반응형웹 */
-@media screen and (max-width:1500px){
-    /* 1500px 이하일 때 */
-    main .bg video {
-        width:auto; height:100%;
-    }
-}/* 1500px end */
-body {min-width:1000px;}
+@media screen and (max-width:1300px){
+    /* .swiper-slide {scale:0.8;} */
+}
+@media screen and (max-width:900px){
+
+}
+@media screen and (max-width:600px){
+
+}
 /* main bg */
 main {}
 main .bg {width:100%; overflow:hidden;}

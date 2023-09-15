@@ -4,9 +4,16 @@
 }
 @media screen and (max-width:900px){
     header .h_top > p {display:none;}
+    .menu {display:block !important;}
+    nav {display:none;}
+    .btm_right {right:10px !important;}
+}
+@media screen and (max-width:600px){
+    header .h_btm h1 {scale:0.7; margin-left:0 !important;}
+    .btm_right {scale:0.9;}
+    .menu {scale:0.9;}
 }
 /* header */
-body {min-width:1000px;}
 header {}
 header .h_top {
     background:#10304D; height:45px;
@@ -26,6 +33,17 @@ header .h_top .map_btn p {
     margin:0 50px 0 15px;
 }
 /* header nav */
+header .h_btm {}
+header .h_btm .menu {
+    margin-left:20px; display:none;
+    padding-bottom:10px;
+}
+header .h_btm .menu p {
+    width:30px; height:5px;
+    background:#333; margin-top:5px;
+    border-radius:4px;
+}
+header .h_btm .menu p:first-child {margin-top:0;}
 header .h_btm h1 {width:200px; height:50px; margin-left:50px;}
 header .h_btm h1 img {width:100%;}
 header .h_btm {
@@ -99,10 +117,11 @@ header .h_btm .btm_right li:first-child a {margin-left:0;}
 /* search */
 header .h_btm .btm_right li #search_frm {line-height:70px;}
 header .h_btm .btm_right li #search_frm fieldset {
-    display:flex; padding-top:18px;
+    display:flex; padding-top:18px; position:relative;
 }
 header .h_btm .btm_right li #search_frm fieldset input {
-    width:190px;
+    width:300px; height:50px; position:absolute; top:70px; right:-160px;
+    border:3px solid #10304D; border-radius:10px; padding:10px;
 } 
 header .h_btm .btm_right li #search_frm fieldset #search_btn {
     background:none;
