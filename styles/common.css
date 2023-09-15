@@ -1,6 +1,25 @@
 /* 반응형웹 */
+@media screen and (max-width:1500px){
+    .f_top .mail p {line-height:20px !important;}
+}
 @media screen and (max-width:1200px){
     header .h_btm nav > ul > li .sub .right .image4 {display:none;}
+    footer {scale:0.8;}
+    /* footer .f_top .mail #mail_frm fieldset input {width:50% !important;}
+    footer .f_top .mail #mail_frm fieldset .mail_btn {width:80px !important;} */
+}
+@media screen and (max-width:1000px) {
+    footer .f_top {flex-flow:column nowrap; padding:30px 0 !important;}
+    footer .f_top > p {width:250px; height:1px !important;}
+    footer .f_top .mail #mail_frm fieldset .mail_btn {width:10% !important; width:100px !important;}
+    footer .f_top dl {width:300px !important;}
+    footer .f_top dl dt {float:left;}
+    footer .f_top dl dd {float:right;}
+    footer .f_top dl dd a {display:none !important;}
+    footer {width:100% !important;}
+    footer .f_top .mail {width:400px !important;}
+    footer .f_top .mail p {margin-bottom:10px;}
+    footer .f_top .mail #mail_frm fieldset input {width:300px !important; margin-bottom:20px;}
 }
 @media screen and (max-width:900px){
     header .h_top > p {display:none;}
@@ -186,14 +205,19 @@ footer .f_top {
     border-top:1px solid #aaa;
 }
 footer .f_top dl {
-    width:250px; height:250px;
+    width:250px;
     display:inline-block;
 }
 footer .f_top dl dt {
     font-weight:700; margin-bottom:30px;
     width:100%;
 }
-footer .f_top dl dd {padding-bottom:20px;}
+footer .f_top dl dd {}
+footer .f_top dl dd a {
+    display:block;
+    margin-bottom:20px;
+}
+footer .f_top dl dd a:last-child {margin-bottom:0;}
 footer .f_top dl dd:last-child {padding-bottom:0;}
 footer .f_top > p {
     width:1px; height:250px; background:#aaa;
@@ -201,7 +225,7 @@ footer .f_top > p {
 }
 footer .f_top dl dd a {}
 footer .f_top .mail {
-    width:500px; height:250px;
+    width:500px;
     display:flex; flex-flow:column nowrap;
     justify-content:space-between;
 }
@@ -211,12 +235,12 @@ footer .f_top .mail .news {
 footer .f_top .mail #mail_frm {}
 footer .f_top .mail #mail_frm fieldset {}
 footer .f_top .mail #mail_frm fieldset input {
-    width:300px; height:50px;
+    width:70%; height:50px;
     border:1px solid #000; padding-left:20px;
     position:relative;
 }
 footer .f_top .mail #mail_frm fieldset .mail_btn {
-    width:100px; height:50px; color:#fff;
+    width:7%; height:50px; color:#fff;
     background:#10304D; position:absolute;
     font-weight:700;
 }
