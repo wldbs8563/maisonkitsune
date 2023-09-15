@@ -26,10 +26,10 @@
     .menu {display:block !important;}
     nav {display:none;}
     .btm_right {right:10px !important;}
+    header .h_top .map_btn p {margin:0 10px 0 15px !important;}
 }
 @media screen and (max-width:600px){
     header .h_btm h1 {scale:0.7; margin-left:0 !important;}
-    .btm_right {scale:0.9;}
     .menu {scale:0.9;}
 }
 /* header */
@@ -150,6 +150,7 @@ header .h_btm .btm_right li .login_box {
     background:#f4f4f4;
     position:absolute; top:70px; right:-50px; z-index:900;
     width:400px; height:450px; padding:30px 0 0 50px;
+    z-index:999;
 }
 header .h_btm .btm_right li .login_box > p {
     display:flex; align-items:center;

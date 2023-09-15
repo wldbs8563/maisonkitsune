@@ -92,5 +92,5 @@ main .shop .s_left a {font-size:2.369rem; font-weight:700;}
 main .shop .s_left a img {}
 main .shop .s_left p:last-child {
     border-bottom:2px solid #000;
-    display:inline-block;
+    display:inline-block; margin-bottom:20px;
 }

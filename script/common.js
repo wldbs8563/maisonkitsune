@@ -114,8 +114,6 @@ product.forEach(function(t,i){
         txt[i].style.background='none'
     })
 })
-const footer = document.querySelectorAll('.f_top dl dd a')
-console.log(footer)
 
 
 
