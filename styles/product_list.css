@@ -1,3 +1,4 @@
+
 body {}
 main {}
 main > h1 {
@@ -59,7 +60,8 @@ main .list ul {
 }
 main .list ul li {
     width:320px; height:450px;
-    margin-top:20px;
+    margin-top:20px; margin-left:5px;
+    background-position:center;
 }
 main .list ul li .info {
     width:100%; height:100%;
@@ -103,4 +105,20 @@ main .list ul .item {
 }
 @media screen and (max-width:900px){
     main .list {width:700px;}
+}
+@media screen and (max-width:750px){
+    .item {
+        width:48% !important; height:350 !important;
+        background-position:center !important;
+        background-size:100% !important;
+        background-repeat:no-repeat !important;
+    }
+    .item a >* {display:none;}
+    main .list {width:calc(100% - 50px) !important;}
+}
+@media screen and (max-width:650px){
+    .item {height:300px !important;}
+}
+@media screen and (max-width:500px){
+    .item {height:250px !important;}
 }

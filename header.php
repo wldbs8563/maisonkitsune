@@ -136,14 +136,8 @@
             </ul>
         </nav>
         <ul class="btm_right">
-            <li id="search_mouse">
-                <form action="#" method="get" id="search_frm">
-                    <fieldset>
-                        <legend class="skip">검색양식</legend>
-                        <input type="text" autofocus placeholder="검색어를 입력해주세요" name="search">
-                        <button type="submit" id="search_btn"><img src="./images/icon_search.png" alt=""></button>
-                    </fieldset>
-                </form>
+            <li class="icon">
+                <a href="#"><img src="./images/icon_search.png" alt=""></a>
             </li>
             <li class="icon">
                 <a href="#"><img src="./images/icon_user.png" alt=""></a>
@@ -153,7 +147,7 @@
                         <fieldset>
                             <legend class="skip">로그인양식</legend>
                             <input type="text" name="id" id="id" placeholder="아이디">
-                            <input type="text" name="pw" id="pw" placeholder="비밀번호">
+                            <input type="password" name="pw" id="pw" placeholder="비밀번호">
                             <a href="#">비밀번호를 잊으셨나요?</a>
                             <label for="auto"><input type="checkbox" id="auto"><span>자동 로그인</span></label>
                             <button type="submit" id="loginBtn">로그인</button>

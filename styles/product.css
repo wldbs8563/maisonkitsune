@@ -1,15 +1,16 @@
-body {min-width:1000px;}
+body {}
 main {
     margin:0 auto;
 }
 main .product {
-    width:1340px; margin:0 auto;
+    width:calc(100% - 40px); margin:0 auto;
     display:flex; flex-flow:row nowrap;
-    align-items: start; justify-content:space-between;
+    align-items:center; justify-content:space-between;
     padding:50px 0;
 }
 main .product #product_slide {
-    width:660px; height:750px;
+    width:48%; height:750px;
+    
 }
 main .product #product_slide .swiper-wrapper {}
 main .product #product_slide .swiper-wrapper .slide1 {background:url(../images/product1.jpg);}
@@ -18,11 +19,14 @@ main .product #product_slide .swiper-wrapper .slide3 {background:url(../images/p
 main .product #product_slide .swiper-wrapper .slide4 {background:url(../images/product4.jpg);}
 main .product #product_slide .swiper-wrapper .slide5 {background:url(../images/product5.jpg);}
 main .product #product_slide .swiper-wrapper .slide6 {background:url(../images/product6.jpg);}
+main .product #product_slide .swiper-wrapper .swiper-slide {
+    background-position:center;
+    background-repeat:no-repeat;
+}
 main .product #product_slide .swiper-wrapper .swiper-slide {}
 main .product .info {
-    margin-left:50px;
+    width:48%;
     display:flex; flex-flow:column nowrap;
-    
 }
 main .product .info h1 {
     font-size:2.3rem; font-weight:700;
@@ -62,3 +66,31 @@ main .product .info button {
     background:#fff; color: #10304D;
 }
 main .product .info button:hover {background:#10304D; color:#fff;}
+/* 반응형웹 */
+@media screen and (max-width:1300px){
+    .info {scale:0.8;}
+}
+@media screen and (max-width:1100px){
+    #product_slide {height:650px !important;}
+    .info {scale:0.6;}
+    .swiper-slide {background-size:cover !important;}
+    .info button {width:300px !important;}
+}
+@media screen and (max-width:750px){
+    .info h1 {font-size:1.5rem !important;}
+    #product_slide {height:500px !important; width:50% !important;}
+    .swiper-slide {}
+    .info {width:50% !important;}
+    .color span {scale:0.8; margin-top:20px !important;}
+    .info .size {margin:20px 0 !important;}
+    /* .info .size a {width:25px !important; height:25px !important;} */
+}
+@media screen and (max-width:500px){
+    #product_slide {height:300px !important;}
+    .account {display:none;}
+    .price {margin:20px 0 !important;}
+    .color {display:none;}
+    .size {display:none;}
+    .txt {display:none;}
+    .info button {width:200px !important;}
+}

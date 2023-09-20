@@ -129,26 +129,18 @@ header .h_btm .btm_right {
     position:absolute; right:50px;
     display:flex;
 }
-header .h_btm .btm_right li {}
+header .h_btm .btm_right #search_mouse {background:pink;}
+header .h_btm .btm_right li {
+    padding:23px 0;
+}
 header .h_btm .btm_right li a {margin-left:15px; line-height:70px;}
 /* header .h_btm .btm_right li a:first-child {line-height:0;} */
 header .h_btm .btm_right li:first-child a {margin-left:0;}
 /* search */
-header .h_btm .btm_right li #search_frm {line-height:70px;}
-header .h_btm .btm_right li #search_frm fieldset {
-    display:flex; padding-top:18px; position:relative;
-}
-header .h_btm .btm_right li #search_frm fieldset input {
-    width:300px; height:50px; position:absolute; top:70px; right:-160px;
-    border:3px solid #10304D; border-radius:10px; padding:10px;
-} 
-header .h_btm .btm_right li #search_frm fieldset #search_btn {
-    background:none;
-} 
 /* login */
 header .h_btm .btm_right li .login_box {
     background:#f4f4f4;
-    position:absolute; top:70px; right:-50px; z-index:900;
+    position:absolute; top:93px; right:-50px; z-index:900;
     width:400px; height:450px; padding:30px 0 0 50px;
     z-index:999;
 }
